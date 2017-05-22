@@ -27,6 +27,12 @@ vectorAdd(const float *A, const float *B, float *C, int numElements)
 int
 main(void)
 {
+    FILE * fp;
+
+   fp = fopen ("file.txt", "w+");
+   fprintf(fp, "%s %s %s %d", "We", "are", "in", 2012);
+   
+   fclose(fp);
     // Error code to check return values for CUDA calls
     cudaError_t err = cudaSuccess;
 
