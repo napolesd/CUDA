@@ -1,3 +1,4 @@
+// test for vectoradd
 #include <stdio.h>
 
 // For the CUDA runtime routines (prefixed with "cuda_")
